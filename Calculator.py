@@ -14,7 +14,7 @@ def calculator(process ,num1,num2):
 
 
 process = ''
-while process not in [ '+','-','/','*']:
+while process not in [ '-','+','/','*']:
     process = input ("Which Process you want to do(+,-,/,*) : ")
     if process not in [ '-','+','/','*']:{
        print (" Invalid Process !!! ")
