@@ -1,19 +1,19 @@
 import unittest
-from Calculator import Calculator
+from Calculator import calculator
 
 class TestCalculator(unittest.TestCase):
     
     def test_addition(self):
-        self.assertEqual(Calculator('+', 1, 2), 3)
+        self.assertEqual(calculator('+', 1, 2), 3)
 
     def test_subtraction(self):
-        self.assertEqual(Calculator('-', 5, 3), 2)
+        self.assertEqual(calculator('-', 5, 3), 2)
 
     def test_multiplication(self):
-        self.assertEqual(Calculator('*', 3, 4), 12)
+        self.assertEqual(calculator('*', 3, 4), 12)
 
     def test_division(self):
-        self.assertEqual(Calculator('/', 10, 2), 5)
+        self.assertEqual(calculator('/', 10, 2), 5)
 
 if __name__ == '__main__':
     unittest.main()
